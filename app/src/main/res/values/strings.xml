@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">dlt22</string>
+    <string name="female" />
+    <string name="male" />
+    <string name="you_selected">You Selected</string>
+</resources>
