@@ -64,22 +64,50 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(ClubViewHolder holder, int position) {
 
-        RadioGroup radioGroup;
-        RadioButton rb1,rb2;
+//        RadioGroup radioGroup;
 
-        holder.clubName.setText(clubs.get(position).name);
-        holder.clubTitle.setText(clubs.get(position).title);
+        if(position==0) {
+            RadioButton rb1, rb2;
 
-        radioGroup = new RadioGroup(RecyclerViewAdapter.this.context);
+            holder.clubName.setText(clubs.get(position).name);
+            holder.clubTitle.setText(clubs.get(position).title);
 
-        rb1 = new RadioButton(RecyclerViewAdapter.this.context);
-        rb2 = new RadioButton(RecyclerViewAdapter.this.context);
+//        radioGroup = new RadioGroup(RecyclerViewAdapter.this.context);
 
-        rb1.setText("Male");
-        rb2.setText("Female");
+            rb1 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb2 = new RadioButton(RecyclerViewAdapter.this.context);
 
-        radioGroup.addView(rb1);
-        radioGroup.addView(rb2);
+            rb1.setText("Male");
+            rb2.setText("Female");
+
+            holder.radioGroup.addView(rb1);
+            holder.radioGroup.addView(rb2);
+        }else{
+            RadioButton rb1, rb2,rb3,rb4,rb5;
+
+            holder.clubName.setText(clubs.get(position).name);
+            holder.clubTitle.setText(clubs.get(position).title);
+
+//        radioGroup = new RadioGroup(RecyclerViewAdapter.this.context);
+
+            rb1 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb2 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb3 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb4 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb5 = new RadioButton(RecyclerViewAdapter.this.context);
+
+            rb1.setText("Viral");
+            rb2.setText("Snehal");
+            rb3.setText("Jhon");
+            rb4.setText("Vipul");
+            rb5.setText("Viren");
+
+            holder.radioGroup.addView(rb1);
+            holder.radioGroup.addView(rb2);
+            holder.radioGroup.addView(rb3);
+            holder.radioGroup.addView(rb4);
+            holder.radioGroup.addView(rb5);
+        }
 
     }
 
