@@ -82,6 +82,25 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             holder.radioGroup.addView(rb1);
             holder.radioGroup.addView(rb2);
+        }else if(position==1){
+            RadioButton rb1, rb2,rb3;
+
+            holder.clubName.setText(clubs.get(position).name);
+            holder.clubTitle.setText(clubs.get(position).title);
+
+//        radioGroup = new RadioGroup(RecyclerViewAdapter.this.context);
+
+            rb1 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb2 = new RadioButton(RecyclerViewAdapter.this.context);
+            rb3 = new RadioButton(RecyclerViewAdapter.this.context);
+
+            rb1.setText("Viral");
+            rb2.setText("Snehal");
+            rb3.setText("John");
+
+            holder.radioGroup.addView(rb1);
+            holder.radioGroup.addView(rb2);
+            holder.radioGroup.addView(rb3);
         }else{
             RadioButton rb1, rb2,rb3,rb4,rb5;
 
@@ -98,7 +117,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             rb1.setText("Viral");
             rb2.setText("Snehal");
-            rb3.setText("Jhon");
+            rb3.setText("John");
             rb4.setText("Vipul");
             rb5.setText("Viren");
 
