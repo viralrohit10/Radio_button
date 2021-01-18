@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     Context context;
-
     private List<Club> clubs;
     private Object Context;
 
