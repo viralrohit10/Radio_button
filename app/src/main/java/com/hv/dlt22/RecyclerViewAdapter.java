@@ -30,6 +30,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public RecyclerViewAdapter(List<Club> clubs,Context context) {
         this.clubs = clubs;
+
         this.context=context;
     }
 
